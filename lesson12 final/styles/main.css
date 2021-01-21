@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: coral;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;  
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);
+    background: linear-gradient(to bottom, #434343, #000000);
+
+}
+
+h1 {
+    color: #fefefe;
+    font-size: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    animation-name: lol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lol {
+    0% {
+    background-position: 0 50%;
+    color: whitesmoke;
+    }
+
+    50% {
+    background-position: 100% 50%;
+    color: rebeccapurple;
+    }
+
+    90% {
+    background-position: 0 50%;
+    color: brown;
+    }
+
+    100% {
+        background-position: 0 50%;
+        color: whitesmoke;
+        }
+}
